@@ -79,11 +79,12 @@ abstract class PlutoStateWithChange<T extends PlutoStatefulWidget>
 }
 
 abstract class PlutoStateWithChangeKeepAlive<T extends PlutoStatefulWidget>
+
     extends PlutoStateWithChange<T> with AutomaticKeepAliveClientMixin {
   bool _keepAlive = false;
 
   KeepAliveHandle? _keepAliveHandle;
-
+//_keepAliveHandle = null;
   @override
   bool get wantKeepAlive => _keepAlive;
 
@@ -112,7 +113,7 @@ abstract class PlutoStateWithChangeKeepAlive<T extends PlutoStatefulWidget>
   }
 
   void _releaseKeepAlive() {
-    _keepAliveHandle!.release();
+//    _keepAliveHandle!.release();
     _keepAliveHandle = null;
   }
 }
