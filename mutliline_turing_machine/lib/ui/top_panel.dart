@@ -620,7 +620,7 @@ class _TopPanelState extends State<TopPanel> {
               ),
               Tooltip(
                 waitDuration: const Duration(milliseconds: 500),
-                message: "Сохранить все ленты (Crtl+Shift+S)",
+                message: "Сохранить ленту (Crtl+Shift+S)",
                 child: ElevatedButton(
                   onPressed: saveAllLines,
                   child: SizedBox(
@@ -638,7 +638,7 @@ class _TopPanelState extends State<TopPanel> {
               ),
               Tooltip(
                 waitDuration: const Duration(milliseconds: 500),
-                message: "Загрузить все ленты (Crtl+Shift+L)",
+                message: "Загрузить ленту (Crtl+Shift+L)",
                 child: ElevatedButton(
                   onPressed: loadAllLines,
                   child: SizedBox(
@@ -654,67 +654,67 @@ class _TopPanelState extends State<TopPanel> {
               const SizedBox(
                 width: 6,
               ),
-              Tooltip(
-                waitDuration: const Duration(milliseconds: 500),
-                message: "Очистить все ленты (Crtl+Shift+C)",
-                child: ElevatedButton(
-                  onPressed: () {
-                    clearAllLines();
-                  },
-                  child: SizedBox(
-                    width: iconSize,
-                    height: iconSize,
-                    child: Image(
-                        image: AppImages.clear,
-                        color: Theme.of(context).cardColor),
-                  ),
-                  style: appButtonStyle(context),
-                ),
-              ),
-              const SizedBox(
-                width: 6,
-              ),
-              Container(
-                width: 2,
-                color: Theme.of(context).highlightColor,
-                height: 16,
-              ),
-              const SizedBox(
-                width: 6,
-              ),
-              Tooltip(
-                waitDuration: const Duration(milliseconds: 500),
-                message: "Добавить ленту в конец (Crtl+])",
-                child: ElevatedButton(
-                  onPressed: addLine,
-                  child: SizedBox(
-                    width: iconSize,
-                    height: iconSize,
-                    child: Image(
-                        image: AppImages.addVariantDown,
-                        color: Theme.of(context).cardColor),
-                  ),
-                  style: appButtonStyle(context),
-                ),
-              ),
-              const SizedBox(
-                width: 6,
-              ),
-              Tooltip(
-                waitDuration: const Duration(milliseconds: 500),
-                message: "Удалить последнюю ленту (Crtl+[ )",
-                child: ElevatedButton(
-                  onPressed: deleteLine,
-                  child: SizedBox(
-                    width: iconSize,
-                    height: iconSize,
-                    child: Image(
-                        image: AppImages.deleteVariant,
-                        color: Theme.of(context).cardColor),
-                  ),
-                  style: appButtonStyle(context),
-                ),
-              ),
+              // Tooltip(
+              //   waitDuration: const Duration(milliseconds: 500),
+              //   message: "Очистить все ленты (Crtl+Shift+C)",
+              //   child: ElevatedButton(
+              //     onPressed: () {
+              //       clearAllLines();
+              //     },
+              //     child: SizedBox(
+              //       width: iconSize,
+              //       height: iconSize,
+              //       child: Image(
+              //           image: AppImages.clear,
+              //           color: Theme.of(context).cardColor),
+              //     ),
+              //     style: appButtonStyle(context),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 6,
+              // ),
+              // Container(
+              //   width: 2,
+              //   color: Theme.of(context).highlightColor,
+              //   height: 16,
+              // ),
+              // const SizedBox(
+              //   width: 6,
+              // ),
+              // Tooltip(
+              //   waitDuration: const Duration(milliseconds: 500),
+              //   message: "Добавить ленту в конец (Crtl+])",
+              //   child: ElevatedButton(
+              //     onPressed: addLine,
+              //     child: SizedBox(
+              //       width: iconSize,
+              //       height: iconSize,
+              //       child: Image(
+              //           image: AppImages.addVariantDown,
+              //           color: Theme.of(context).cardColor),
+              //     ),
+              //     style: appButtonStyle(context),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 6,
+              // ),
+              // Tooltip(
+              //   waitDuration: const Duration(milliseconds: 500),
+              //   message: "Удалить последнюю ленту (Crtl+[ )",
+              //   child: ElevatedButton(
+              //     onPressed: deleteLine,
+              //     child: SizedBox(
+              //       width: iconSize,
+              //       height: iconSize,
+              //       child: Image(
+              //           image: AppImages.deleteVariant,
+              //           color: Theme.of(context).cardColor),
+              //     ),
+              //     style: appButtonStyle(context),
+              //   ),
+              // ),
             ],
           ),
         ),
