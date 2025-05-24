@@ -16,6 +16,7 @@ import 'state/pagination_row_state.dart';
 import 'state/row_state.dart';
 import 'state/scroll_state.dart';
 import 'state/selecting_state.dart';
+import 'package:flutter/foundation.dart';
 
 abstract class IPlutoGridState
     implements
@@ -183,7 +184,9 @@ class PlutoGridCellPosition {
   }
 
   @override
-  int get hashCode => hashValues(columnIdx, rowIdx);
+  int get hashCode => Object.hash(columnIdx, rowIdx);
+  // int get hashCode => hashValues(columnIdx, rowIdx);
+
 }
 
 class PlutoGridSelectingCellPosition {
@@ -201,7 +204,8 @@ class PlutoGridSelectingCellPosition {
   }
 
   @override
-  int get hashCode => hashValues(field, rowIdx);
+int get hashCode => Object.hash(field, rowIdx);
+  // int get hashCode => hashValues(field, rowIdx);
 }
 
 class PlutoGridKeyPressed {
