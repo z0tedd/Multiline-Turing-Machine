@@ -446,7 +446,7 @@ class _AboutPanel extends State<AboutPanel> {
               width: MediaQuery.of(context).size.width,
               color: Theme.of(context).colorScheme.background,
               child: Text(
-                "Developed by the NullExp team specifically for Kuban State University",
+                "Developed by the Gopher go data + SLAVA team specifically for Kursk State University",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Theme.of(context).cardColor,
